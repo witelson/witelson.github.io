@@ -1,0 +1,55 @@
+.vis-project-timeline .vis-timeline-title {
+  margin-bottom: 3rem;
+}
+
+.vis-project-timeline .vis-timeline-legend {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.vis-project-timeline svg {
+  overflow: visible;
+}
+
+.vis-project-timeline .vis-timeline {
+  position: relative;
+}
+
+.vis-project-timeline .vis-timeline-item {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+.vis-project-timeline .vis-timeline-item__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 8px;
+  text-align: right;
+}
+
+.vis-project-timeline .vis-timeline-item__body {
+  display: block;
+}
+
+.vis-project-timeline.vis-tooltip {
+  max-width: calc(100% - 6em - 12px - 16px - 12px);
+}
+
+.vis-project-timeline.vis-tooltip .item-chip {
+  display: inline-block;
+  border: 1px solid currentColor;
+  padding: 0 0.5em;
+  border-radius: 0.25em;
+  margin-bottom: 0.667em;
+}
+
+.vis-project-timeline.vis-tooltip .item-chip + .item-chip {
+  margin-left: 1em;
+}
+
+.vis-project-timeline.vis-tooltip .tooltip-item {
+  margin-top: 1.667em;
+}

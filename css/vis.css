@@ -1,0 +1,194 @@
+/* Reset */
+.vis *,
+.vis *::before,
+.vis *::after {
+  box-sizing: border-box;
+}
+
+.vis h1,
+.vis h2,
+.vis h3,
+.vis h4,
+.vis h5,
+.vis h6,
+.vis p {
+  margin: 0;
+}
+
+/* General */
+.vis {
+  --color-off-white: #fcfcfc;
+  --color-background: #f7f7fc;
+  --color-input: #eff0f6;
+  --color-line: #d9dbe9;
+  --color-placeholder: #a0a3bd;
+  --color-label: #6e7191;
+  --color-body: #4e4b66;
+  --color-slate: #262338;
+  --color-off-black: #14142b;
+
+  --header-font-family: Rubik, sans-serif;
+  --body-font-family: Rubik, sans-serif;
+
+  font-family: var(--body-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+  color: var(--color-body);
+}
+
+/* Colors */
+.vis .color-off-white {
+  color: var(--color-off-white);
+}
+.vis .color-background {
+  color: var(--color-background);
+}
+.vis .color-input {
+  color: var(--color-input);
+}
+.vis .color-line {
+  color: var(--color-line);
+}
+.vis .color-placeholder {
+  color: var(--color-placeholder);
+}
+.vis .color-label {
+  color: var(--color-label);
+}
+.vis .color-body {
+  color: var(--color-body);
+}
+.vis .color-slate {
+  color: var(--color-slate);
+}
+.vis .color-off-black {
+  color: var(--color-off-black);
+}
+
+/* Typography */
+.vis h1,
+.vis .text-is-h1 {
+  font-family: var(--header-font-family);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: 1px;
+  color: var(--color-off-black);
+}
+
+.vis h2,
+.vis .text-is-h2 {
+  font-family: var(--header-font-family);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 1px;
+  color: var(--color-off-black);
+}
+
+.vis h3,
+.vis .text-is-h3 {
+  font-family: var(--header-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  color: var(--color-off-black);
+}
+
+.vis h4,
+.vis .text-is-h4 {
+  font-family: var(--header-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 34px;
+  letter-spacing: 1px;
+  color: var(--color-off-black);
+}
+
+.vis h5,
+.vis .text-is-h5 {
+  font-family: var(--header-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  color: var(--color-off-black);
+}
+
+.vis h6,
+.vis .text-is-h6 {
+  font-family: var(--header-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: var(--color-off-black);
+}
+
+.vis .text-is-lg {
+  font-family: var(--body-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0.75px;
+}
+
+.vis .text-is-md {
+  font-family: var(--body-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: 0.75px;
+}
+
+.vis .text-is-sm {
+  font-family: var(--body-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+}
+
+.vis .text-is-xs {
+  font-family: var(--body-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+}
+
+.vis .text-is-xxs {
+  font-family: var(--body-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+}
+
+.vis .text-is-body10 {
+  font-family: var(--body-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.25px;
+}
+
+.vis .text-bold {
+  font-weight: 700;
+}
