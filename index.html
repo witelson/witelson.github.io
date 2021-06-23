@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PSGD Project Timeline</title>
+    <!-- CSS -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- For this testing page -->
+    <style>
+      body {
+        margin: 0;
+      }
+      main {
+        margin: 3rem auto;
+        width: 80%;
+        max-width: 1320px;
+        min-width: 320px;
+      }
+    </style>
+    <!-- Vis -->
+    <link rel="stylesheet" href="css/vis.css" />
+    <link rel="stylesheet" href="css/vis-tooltip.css" />
+    <link rel="stylesheet" href="css/vis-project-timeline.css" />
+  </head>
+  <body>
+    <main>
+      <div id="psgd-project-timeline"></div>
+    </main>
+    <!-- JS -->
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <!-- Vis -->
+    <script src="js/vis-tooltip.js"></script>
+    <script src="js/vis-project-timeline.js"></script>
+    <!-- For this testing page -->
+    <script>
+      const PSGD_PROJECT_TIMELINE_DATA_URL = "data/PSGDProjectsTimeline.csv";
+
+      d3.csv(PSGD_PROJECT_TIMELINE_DATA_URL).then((projectTimelineData) => {
+        new VisProjectTimeline({
+          el: document.querySelector("#psgd-project-timeline"),
+          data: projectTimelineData,
+          title: "Project Timeline",
+        });
+      });
+    </script>
+  </body>
+</html>
